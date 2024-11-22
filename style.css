@@ -588,7 +588,7 @@ form .btn2 {
     }
 }
    
-@media (max-width : 380px ){
+@media (max-width : 376px ){
     .sub-title {
         font-size: 53px;
     }
