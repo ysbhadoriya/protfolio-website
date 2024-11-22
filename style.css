@@ -581,9 +581,44 @@ form .btn2 {
         font-size: 46px;
     }
     .right ul{
-        margin : 1rem 2.4rem
+        margin : 1rem 
     }
     .contact-right form{
       width : 288px ;
     }
+}
+@media (width : 320px) {
+    #header .left {
+        font-size : 23px ;
+        text-shadow: 0px ;
+    }
+
+    .right ul {
+        margin-left: 56px;
+        gap: 0.5rem;
+    }
+    .firstsection {
+        display: grid
+;
+        margin: 0rem 0rem 6.5rem -4.5rem;
+      
+    }
+  
+    .leftsection{
+        margin-left: 142px;
+    }
+
+    .sub-title1{
+        font-size: 33px;
+        font-weight: 600;
+    }
+
+    #portfolio {
+        padding: 0 75px;
+    }
+
+    .btn {
+        margin-left: 8px;
+    }
+
 }
