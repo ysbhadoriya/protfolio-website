@@ -11,11 +11,12 @@ html {
 
 body {
     /* background: #080808; */
-    background-image: url(./images/SL-072622-51930-14.jpg);
+/*     background-image: url(./images/); */
     background-size: 100% auto;
     background-repeat: no-repeat;
     color: hsl(0, 0%, 90%);
     background-attachment: fixed;
+    background-color: #000;
 }
 
 nav {
@@ -404,9 +405,10 @@ form .btn2 {
 }
 
 /* media queries  */
-@media (max-width: 1024px) {
+/* For devices between 768px and 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
     .firstsection {
-        margin: 120px 0 150px 0px
+        margin: 120px 0 150px 0;
     }
 
     .rightsection {
@@ -418,7 +420,8 @@ form .btn2 {
     }
 }
 
-@media (max-width: 768px) {
+/* For devices between 480px and 768px */
+@media (min-width: 480px) and (max-width: 768px) {
     .firstsection div {
         width: 80%;
     }
@@ -428,16 +431,15 @@ form .btn2 {
     }
 
     .firstsection {
-        margin: 80px 2.5rem 80px 2.5rem;
+        margin: 80px 2.5rem;
     }
 
     #about {
-        padding: 0 2.8rem
+        padding: 0 2.8rem;
     }
 
     .row-1 img {
         width: 150%;
-
     }
 
     .tab-contents.active-tab {
@@ -446,25 +448,20 @@ form .btn2 {
     }
 
     .row {
-
         gap: 5rem;
-
     }
 
     body {
         background-repeat: repeat;
     }
-
 }
 
-@media (max-width : 480px) {
-
-
+/* For devices between 320px and 480px */
+@media (min-width: 320px) and (max-width: 480px) {
     #header nav {
         flex-direction: column;
         margin: 1.5rem 2.5rem 3rem 9rem;
         gap: 1rem;
-
     }
 
     .right ul {
@@ -474,11 +471,6 @@ form .btn2 {
     body {
         background-image: url(images/Screenshot\ 2024-11-22\ 134951.png);
         background-repeat: repeat-y;
-
-
-        /* background-color:#bdc3c7; */
-        /* background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
-
     }
 
     .firstsection {
@@ -488,15 +480,13 @@ form .btn2 {
 
     .leftsection {
         order: 2;
-        margin-left: 5rem;
-        margin-right: 2.5rem;
-        text-align: center;
+        margin: 0 2.5rem 0 5rem;
         text-align: justify;
     }
 
     .rightsection {
         order: 1;
-        margin: 0rem 0rem 2.5rem 5rem;
+        margin: 0 0 2.5rem 5rem;
         width: 100%;
     }
 
@@ -514,7 +504,6 @@ form .btn2 {
         width: 217%;
         height: 350px;
     }
-
 
     .sub-title {
         font-size: 59px;
@@ -552,67 +541,27 @@ form .btn2 {
     }
 }
 
-@media (min-width : 375px) {
-    .firstsection {
-        display: grid;
-        margin: 0rem 0rem 6.5rem -1.5rem;
-    }
-
-    .sub-title{
-        font-size: 53px;
-    }
-    .row{
-        margin-left: -46px;
-    }
-
-    .tab-contents.active-tab{
-        gap: 4rem;
-    }
-    
-    #portfolio{
-        padding: 0 77px;
-    }
-
-    .btn {
-        margin-left: 26px;
-    }
-
-    .sub-title1{
-        font-size: 42px;
-    }
-    .right ul{
-        margin : 1rem 
-    }
-    .contact-right {
-        width: 113%;
-        margin-top: 60px;
-    }
-}
-
-
-
-@media (width : 320px) {
+/* For devices with an exact width of 320px */
+@media (width: 320px) {
     #header .left {
-        font-size : 23px ;
-        text-shadow: 0px ;
+        font-size: 23px;
     }
 
     .right ul {
         margin-left: 56px;
         gap: 0.5rem;
     }
+
     .firstsection {
-        display: grid
-;
-        margin: 0rem 0rem 6.5rem -7.5rem;
-      
+        display: grid;
+        margin: 0 0 6.5rem -7.5rem;
     }
-  
-    .leftsection{
+
+    .leftsection {
         margin-left: 175px;
     }
 
-    .sub-title1{
+    .sub-title1 {
         font-size: 33px;
         font-weight: 600;
     }
@@ -624,5 +573,46 @@ form .btn2 {
     .btn {
         margin-left: 8px;
     }
-
 }
+
+/* For devices between 375px and 480px */
+@media (min-width: 375px) and (max-width: 480px) {
+    .firstsection {
+        display: grid;
+        margin: 0 0 6.5rem -1.5rem;
+    }
+
+    .sub-title {
+        font-size: 53px;
+    }
+
+    .row {
+        margin-left: -46px;
+    }
+
+    .tab-contents.active-tab {
+        gap: 4rem;
+    }
+
+    #portfolio {
+        padding: 0 77px;
+    }
+
+    .btn {
+        margin-left: 26px;
+    }
+
+    .sub-title1 {
+        font-size: 42px;
+    }
+
+    .right ul {
+        margin: 1rem;
+    }
+
+    .contact-right {
+        width: 113%;
+        margin-top: 60px;
+    }
+}
+
