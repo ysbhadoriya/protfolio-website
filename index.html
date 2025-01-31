@@ -4,113 +4,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> personal portfolio </title>
+    <title>  Yogesh Singh  </title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header id="header">
+        <div class="container">
         <nav>
-            <div class="left">Y.S. <span class="po">Portfolio</span> </div>
+            <div class="left"><span>Y.S.</span> Portfolio </div>
             <div class="right">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
                     <li><a href="#portfolio">Projects</a></li>
                     <li><a href="#contact">Contact </a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </div>
 
         </nav>
-
+        
+            <div class="header-text">
+                Hi , I'm <div><h1 class="red">Yogesh Singh </h1></div>
+                <div>And I Am A Passionate</div>
+                <div id="element"><h1>Full Stack Developer .</h1> </div> 
+            </div> 
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Hhjjjkkhjkjhhg"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ys_bhadoriya/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/ysbhadoriya"><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            
+    </div>
 
 
     </header>
     <main>
-        <section class="firstsection">
-            <div class="leftsection">
-                Hi , I Am <div><span class="red">Yogesh Singh </span></div>
-                <div>And I Am A Passionate</div>
-                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-                <span id="element"></span>
-                <script>
-                    var typed = new Typed('#element', {
-                        strings: ['Web Developer .','Web Designer .'],
-                        typeSpeed: 200,
-                        backSpeed: 100,                             
-                        loop: true  
-                    });
-                </script>
-            </div>
-
-            <div class="rightsection">
-                <img src="images/developer-doing-website-development-8350552-6648977.webp" alt="trying again...">
-            </div>
-        </section>
+        
         <!-------------- ABOUT  ------------------------------>
-        <div id="about">
-            <div class="container">
+        <div id="about"> 
                 <div class="row">
                     <div class="row-1"><img
-                            src="images/AGC_20241126_223555571.jpg"
-                            alt=""></div>
+                            src="./images/brand _enhanced - Copy.jpg"
+                            alt="user png "></div>
                     <div class="row-2">
                         <h1 class="sub-title">About Me</h1>
-                        <p>I have a lot of enthusiasm for life and am always looking for new opportunities to learn and grow. I am flexible and can adapt to new situations and changes quickly and easily. I have a friendly personality and enjoy interacting with others. I am genuine, and people can see that I am authentic and honest. </p>
-                        <div class="tab-title">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab " id="skills">
-                            <ul>
-                                <li><span><i class="fa-brands fa-html5"></i> HTML</span></li>
-                                <br>
-                                <li><span><i class="fa-brands fa-css3-alt"></i> CSS </span></li><br>
-                                <li><span><i class="fa-brands fa-js"></i> JavaScript</span></li><br>
-                                <li><span><i class="fa-brands fa-react"></i> React Js</span></li><br>
-                            </ul>
-                            <ul>
-                                <li><span> <i class="fa-solid fa-database"></i> Mongo DB</span></li><br>
-                                <li><span><i class="fa-brands fa-node"></i> Node Js</span></li><br>
-                                <li><span><i class="fa-solid fa-code"></i> Express Js</span></li><br>
-                                <li><span><i class="fa-brands fa-github"></i> Git & Github </span> </li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents " id="education">
-                            <ul>
-                                <li><span>2021</span><br>10th from G.S convent</li>
-                                <li><span>2023</span><br>12th from G.S convent</li>
-                            </ul>
-                        </div>
+                        <ul>
+                            <li>I’m Yogesh Singh, a second-year BCA student with a passion for coding. For me, code is like my playground where I get to experiment, solve problems, and create innovative solutions. I have a keen interest in using my coding skills to design websites that are not only functional but also visually appealing.</li>
+
+                            <li>
+                                Apart from coding, I have a creative side too. I’m deeply passionate about colors and design, which I express both through web design and painting. My love for creating something beautiful and functional is reflected in my projects and personal artwork. 
+                            </li>
+
+                            <li>
+                                Sports also play an important role in my life. I’ve earned several medals in sports like cricket and volleyBall. These experiences have taught me discipline, teamwork, and the importance of perseverance.
+                            </li>
+
+                            <li>
+                                My goal is to blend my technical skills with my creative passions, contributing to impactful software solutions that are both functional and beautiful.
+                            </li>
+                        </ul> 
                     </div>
                 </div>
+        </div>
+       <!-- Education Section -->
+<section id="education" class="education">
+    <h1>Education</h1>
+    <div class="education-container">
+        <!-- BTech Degree Card -->
+        <div class="edu-card">
+            <div class="edu-card-front">
+                <i class="bx bxl-university"></i>
+                <h2>BCA - 2027</h2>
+                <p> IGNOU, New Delhi</p>
+                
+            </div>
+           
+        </div>
+
+        <!-- XIIth Degree Card -->
+        <div class="edu-card">
+            <div class="edu-card-front">
+                <i class="bx bx-graduation"></i>
+                <h2>XIIth - 2023</h2>
+                <p>Gurusharan Convent, Delhi</p>
+            </div>
+            
+        </div>
+
+        <!-- Xth Degree Card -->
+        <div class="edu-card">
+            <div class="edu-card-front">
+                <i class="bx bx-school"></i>
+                <h2>Xth - 2021</h2>
+                <p>Gurusharan Convent, Delhi</p>
+                
             </div>
         </div>
+    </div>
+</section>
+
+    <!------------------------------------------->
+    <!-- SKILL -->
+       
+    <section >
+    <div id="skill">
+        <h1 class="skill">Skills</h1>
+        <div class="skill-card">
+            <div class="skill-card-html" style="color: 
+            orangered;">
+                <div><i class="fa-brands fa-html5 fa-2xl"></i>
+                <div class="hide">HTML</div></div>   
+            </div>
+
+            <div class="skill-card-html" style="color: blue;">
+                <div><i class="fa-brands fa-css3-alt fa-2xl" ></i></div>
+                <div class="hide">CSS</div>
+            </div>
+
+            <div class="skill-card-html" style="color: yellow;">
+                <div><i class="fa-brands fa-js fa-2xl"></i></div>
+                <div class="hide">JavaScript</div>
+            </div>
+
+            <div class="skill-card-html" style="color: #06bcee;">
+                <div><i class="fa-brands fa-react fa-2xl"></i></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="skill-card">
+        <div class="skill-card-html" style="color: rgb(102, 179, 255);">
+            <div><i class="fa-brands fa-uikit fa-2xl"></i></div>
+            
+        </div>
+        <div class="skill-card-html" style="color: green;">
+            <div><i class="fa-brands fa-node fa-2xl" ></i></div>
+            
+        </div>
+        <div class="skill-card-html" style="color: green;">
+            <div><i class="fa-solid fa-database fa-2xl"></i></div>
+        </div>
+        <div class="skill-card-html">
+            <div><i class="fa-brands fa-github fa-2xl"></i></div>
+        </div>
+    </div>
+    <div class="skill-card">
+        <div class="skill-card-html" style="color: #06bcee;" >
+            <div><i class="fa-solid fa-wind fa-2xl"></i></div>
+        </div>
+        <div class="skill-card-html" style="color: red;">
+            <div><i class="fa-brands fa-git-alt fa-2xl"></i></div>
+        </div>
+        <div class="skill-card-html">
+            <h1>EX</h1>
+        </div>
+        <div class="skill-card-html" style="color: #06bcee;" aria-label="REDUX"><H1>REDUX</H1></div>
+    </div>
+    </section>
+
+
+
+     <!-- SKILL END  -->
         <!------------------ PORTFOLIO  ---------------->
         <div id="portfolio">
-            <div class="container">
+            <!-- <div class="container"> -->
                 <h1 class="sub-title1">My Work</h1>
                 <div class="work-list">
                     <div class="work">
-                        <img src="./images/work-1.png" alt="">
+                        <img src="./images/work-3.png" alt="">
                         <div class="layer">
-                            <h3>E comm. Website</h3>
-                            <a href="https://ysbhadoriya.github.io/top-ele.-com/index.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <h3>Ecomm. Website</h3>
+                            <a href="other website/band.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div class="work">
                         <img src="./images/work-2.png" alt="">
                         <div class="layer">
-                            <h3>website</h3>
-                            <a href="" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <h3>Admin panal</h3>
+                            <a href="other website/wesite.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div class="work">
-                        <img src="./images/work-3.png" alt="">
+                        <img src="./images/work-1.png" alt="">
                         <div class="layer">
-                            <h3>website</h3>
-                            <a href="" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                            <h3>GP website</h3>
+                            <a href="other website/gp.html" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
                         </div>
                     </div>
                 </div>
@@ -123,7 +207,7 @@
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
-                        <h1 class="sub-title1">Contact me</h1>
+                        <h1 class="sub-title2">Contact me</h1>
                         <p><i class="fa-solid fa-paper-plane"></i>yogesh8765singh@gmail.com</p>
                         <p><i class="fa-solid fa-square-phone"></i>7827874169</p>
                         <div class="social-icons">
@@ -136,12 +220,12 @@
                     </div>
                     <div class="contact-right">
                         <form action="" name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="text" name="Email" placeholder="Your Email " required>
-                            <textarea name="Message"  rows="10" placeholder="Your Message"></textarea>
+                            <input type="text" name="name" placeholder="Your Name" required>
+                            <input type="text" name="email" placeholder="Your Email " required>
+                            <textarea name="message"  rows="10" placeholder="Your Message"></textarea>
                             <button type="submit" class="btn btn3">Submit</button>
                         </form>
-                        <span id="msg"></span>
+                        
                     </div>
                 </div>
             </div>
@@ -169,26 +253,30 @@
 
 
         </script>
-        
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbymQLcaYicK_IVKXNm0JmQ6bEq_2zm157i7LdAIBVDAepLj8-c87IniAvbTFh6qMrCbxg/exec'
-    const form = document.forms['submit-to-google-sheet']
-   const msg = document.getElementById("msg")
 
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout (function()
-            {
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+        <script>
+            var sidemnu = document.getElementById("sidemenu")
+            function openmenu() {
+                sidemnu.style.right = "0" ;
+            }
+            function closemenu() {
+                sidemnu.style.right = "-200px" ;
+            }
+        </script>
+        
+       
+          
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbztb_ybiSYxAP7Fp-_xHIFnCIKvdOd1fXdfVCqYynjDHuIe6JE3ABs6bcu_hLgfgOFB/exec'
+            const form = document.forms['submit-to-google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response , alert("message sent successfully")))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
 </body>
 
 </html>
