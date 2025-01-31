@@ -530,7 +530,17 @@ nav ul li a:hover::after {
     display: inline-block;
     transition: transform 0.5s;
 }
-
+.social-icons1 {
+    margin-top: 30px;
+}
+.social-icons1 a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: hsl(0, 0%, 90%);
+    display: inline-block;
+    transition: transform 0.5s;
+}
 .social-icons a:hover {
     color: #ff004f;
     transform: translateY(-5px);
@@ -703,10 +713,12 @@ nav .fas{
     font-size: 10px;
   }
 
-  .social-icons {
-    display: none;
-  }
+  
   form input , form textarea {
     width : 270px ; 
+  }
+
+  .social-icons1 {
+    margin-left: -45px;
   }
     }
